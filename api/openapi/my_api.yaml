@@ -24,7 +24,7 @@ paths:
                 {
                     "title": "Guidance demo DOAC plugin",
                     "piid": "pdspi-guidance-demo-DOAC",
-                    "pluginType": "gDM",
+                    "pluginType": "g",
                     "settingsDefaults": {
                       "pluginSelectors": [ {
                           "title": "FHIR URI - an URL (locator) or an URN (unique name)",
@@ -114,10 +114,10 @@ paths:
                       $ref: '#/components/schemas/Message'
                     example: [  {
                       "timestamp": "2019-09-20T00:00:01Z",
-                      "event": "Not a guidance demo DOAC plugin type, [gDM] for [pdspi-guidance-demo-DOAC].",
+                      "event": "Not a guidance demo DOAC plugin type, [g] for [pdspi-guidance-demo-DOAC].",
                       "source": "admin user",
                       "level": 1,
-                      "action": "Changed plugin from [m] type to 'gDM'[pdspi-guidance-demo-DOAC] and returning config as-is otherwise"
+                      "action": "Changed plugin from [m] type to 'g'[pdspi-guidance-demo-DOAC] and returning config as-is otherwise"
                       } ]
                   configs:
                     $ref: '#/components/schemas/Config'
@@ -317,10 +317,9 @@ components:
             - f
             - fD
             - mD
-            - gDM
           description: >-
             A value identifying the plugin type. 
-            'g'=Guidance, 'c'=Convenience, 'm'=Mapper, 'f'=FHIR, 'mD'= Default Mapper, 'fD'=Default FHIR, 'gDM'=Guidance demo DOAC. In the clinical arena, only one FHIR server and only one mapper is 
+            'g'=Guidance, 'c'=Convenience, 'm'=Mapper, 'f'=FHIR, 'mD'= Default Mapper, 'fD'=Default FHIR. In the clinical arena, only one FHIR server and only one mapper is 
             allowed, and this can be indicated either with the defaults, or by 
             only installing one mapper and one FHIR plugin type.
           example: m
@@ -335,7 +334,7 @@ components:
             - Guidance demo DOAC
           description: >-
             A human-readable value for the type. 'g'=Guidance, 'c'=Convenience, 
-            'm'=Mapper, 'f'=FHIR, 'mD'=Default Mapper, 'fD'=Default FHIR, 'gDM'=Guidance deno DOAC
+            'm'=Mapper, 'f'=FHIR, 'mD'=Default Mapper, 'fD'=Default FHIR.
         settingsDefaults:
           $ref: '#/components/schemas/Settings'
     Guidance:
