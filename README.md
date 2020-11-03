@@ -1,4 +1,5 @@
-# pdspi-guidance-demo-DOAC
+# pdspi-guidance-demo-doac
+[![Build Status](https://travis-ci.com/RENCI/pdspi-guidance-demo-doac.svg?branch=main)](https://travis-ci.com/RENCI/pdspi-guidance-demo-doac)
 
 ### Purpose of this plugin
 
