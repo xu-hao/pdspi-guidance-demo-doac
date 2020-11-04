@@ -66,15 +66,15 @@ guidance = {
     "piid": "pdspi-guidance-demo-DOAC",
     "patientId": "38",
     "settingsRequested": {
-    "timestamp": "2019-12-03T13:41:09.942+00:00",
-    "modelParameters": [ {
+      "timestamp": "2019-12-03T13:41:09.942+00:00",
+      "modelParameters": [ {
                             "id": "pdspi-guidance-demo-DOAC:1",
                             "title": "Extended interval nomogram",
                             "parameterDescription": "This calculator uses one of four extended-interval nomograms. Please choose one nomogram.",
                             "parameterValue": { "value": "Hartford" }
                          } 
                        ],
-    "patientVariables": [ {
+      "patientVariables": [ {
                             "id": "LOINC:30525-0",
                             "title": "Age",
                             "variableValue": {
@@ -82,19 +82,18 @@ guidance = {
                             "units": "years"
                             },
                             "how": "The value was specified by the end user."
-                            }, 
-                            {
-                                "id": "LOINC:39156-5",
-                                "title": "BMI",
-                                "variableValue": {
+                          }, 
+                          {
+                            "id": "LOINC:39156-5",
+                            "title": "BMI",
+                            "variableValue": {
                                             "value": "0.5",
                                             "units": "kg/m^2"
                             },
                             "how": "The value was specified by the end user."
-                        } 
-                    ]
-            }
-    ]
+                           } 
+                      ]
+    }
 }
 
 
